@@ -1,0 +1,49 @@
+/****图标按钮通用样式******/
+
+.svg-btn {
+    -fx-max-width: 16;
+    -fx-max-height: 16;
+    -base-hover-color: #1ECE9A;
+}
+
+.svg-btn Region {
+    -fx-background-color: #444444;
+}
+
+.svg-btn:hover Region {
+    -fx-background-color: -base-hover-color;
+}
+
+.content-pane {
+    -fx-background-color: #fdfbfb;
+    -fx-background-size: cover;
+    -fx-background-radius: 4;
+
+}
+
+.play-btn{
+    -fx-background-color: #fdfbfb;
+}
+.play-btn Region {
+    -fx-background-color: #33333355;
+    -fx-pref-width: 15;
+    -fx-pref-height: 15;
+    -fx-shape: "M512 0a512 512 0 1 0 512 512A512 512 0 0 0 512 0z m216.992 541.128L404.96 728.208a33.6 33.6 0 0 1-50.456-29.128V324.928a33.6 33.6 0 0 1 50.456-29.136l324 187.08a33.6 33.6 0 0 1 0 58.256z m0 0";
+}
+
+.play-btn:selected Region {
+    -fx-shape: "M512 1024A512 512 0 1 1 512 0a512 512 0 0 1 0 1024zM320 320v384h128V320H320z m256 0v384h128V320H576z";
+}
+
+
+.mean-btn {
+    -fx-background-color: #e8e8e8;
+    -fx-background-radius: 4;
+}
+
+.mean-btn:hover {
+
+    -fx-border-color: #eff0f1;
+    -fx-border-width: 2;
+}
+

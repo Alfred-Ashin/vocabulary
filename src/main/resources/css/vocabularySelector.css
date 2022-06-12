@@ -1,0 +1,221 @@
+.root {
+    -fx-background-color: null;
+    -base-hover-color: #1ECE9A;
+    -fx-background-radius: 4;
+}
+
+/****图标按钮通用样式******/
+
+.svg-btn {
+    -fx-max-width: 16;
+    -fx-max-height: 16;
+}
+
+.svg-btn Region {
+    -fx-background-color: #444444;
+}
+
+.svg-btn:hover Region {
+    -fx-background-color: -base-hover-color;
+}
+
+.content-pane {
+    -fx-background-color: #fdfbfb;
+    -fx-background-size: cover;
+    -fx-background-radius: 4;
+
+}
+
+/***************顶部区域****************/
+.logo-pane {
+    -fx-fill: white;
+    -fx-font-size: 23;
+}
+
+.full-btn {
+    -fx-background-color: null;
+}
+
+.full-btn Region {
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-shape: "M628.053333 628.053333a32 32 0 0 1 45.226667 0l158.72 158.634667V693.333333l0.298667-4.352A32 32 0 0 1 896 693.333333v181.333334l-0.341333 3.84a21.333333 21.333333 0 0 1-20.992 17.493333h-181.333334l-4.352-0.298667a32 32 0 0 1-27.648-31.701333l0.298667-4.352a32 32 0 0 1 31.701333-27.648h93.44l-158.72-158.72-3.114666-3.584a32 32 0 0 1 3.114666-41.642667z m-232.106666 0a32 32 0 0 1 3.114666 41.642667l-3.114666 3.584-158.72 158.72h93.44a32 32 0 0 1 31.701333 27.648l0.298667 4.352a32 32 0 0 1-27.648 31.701333L330.666667 896H149.333333a21.333333 21.333333 0 0 1-20.992-17.493333L128 874.666667v-181.333334a32 32 0 0 1 63.701333-4.352l0.298667 4.352v93.354667l158.72-158.634667a32 32 0 0 1 45.226667 0zM874.666667 128a21.333333 21.333333 0 0 1 20.992 17.493333L896 149.333333v181.333334a32 32 0 0 1-63.701333 4.352L832 330.666667V237.312L673.28 395.946667a32 32 0 0 1-48.341333-41.642667l3.114666-3.584 158.72-158.72h-93.44a32 32 0 0 1-31.701333-27.648L661.333333 160a32 32 0 0 1 27.648-31.701333L693.333333 128h181.333334zM330.666667 128l4.352 0.298667a32 32 0 0 1 27.648 31.701333l-0.298667 4.352a32 32 0 0 1-31.701333 27.648H237.226667l158.72 158.72 3.114666 3.584a32 32 0 0 1-48.341333 41.642667L192 237.312V330.666667l-0.298667 4.352A32 32 0 0 1 128 330.666667V149.333333l0.341333-3.84A21.333333 21.333333 0 0 1 149.333333 128h181.333334z";
+    -fx-background-color: #444444;
+}
+
+.full-btn:selected Region {
+    -fx-shape: "M749.248 704H864a32 32 0 1 0 0-64H672a32 32 0 0 0-32 32v192a32 32 0 1 0 64 0v-114.752l137.36 137.36a32 32 0 1 0 45.232-45.264L749.248 704zM320 749.248V864a32 32 0 1 0 64 0V672a32 32 0 0 0-32-32H160a32 32 0 1 0 0 64h114.752l-137.36 137.36a32 32 0 1 0 45.264 45.232L320 749.248zM749.248 320H864a32 32 0 1 1 0 64H672a32 32 0 0 1-32-32V160a32 32 0 1 1 64 0v114.752l137.36-137.36a32 32 0 1 1 45.232 45.264L749.248 320zM320 274.752V160a32 32 0 1 1 64 0v192a32 32 0 0 1-32 32H160a32 32 0 1 1 0-64h114.752l-137.36-137.36a32 32 0 1 1 45.264-45.232L320 274.752z";
+}
+
+.full-btn:hover  Region {
+    -fx-background-color: -base-hover-color;
+}
+
+
+.mini-btn Region {
+    -fx-shape: "M821.47555555 20.48H202.52444445C102.4 20.48 20.48 102.4 20.48 202.52444445v618.9511111c0 100.12444445 81.92 182.04444445 182.04444445 182.04444445h618.9511111c100.12444445 0 182.04444445-81.92 182.04444445-182.04444445V202.52444445c0-100.12444445-81.92-182.04444445-182.04444445-182.04444445z m109.22666667 800.99555555c0 60.07466667-49.152 109.22666667-109.22666667 109.22666667h-109.22666666v-109.22666667c0-60.07466667 49.152-109.22666667 109.22666666-109.22666666h109.22666667v109.22666666z m0-182.04444444h-109.22666667c-100.12444445 0-182.04444445 81.92-182.04444444 182.04444444v109.22666667H202.52444445c-60.07466667 0-109.22666667-49.152-109.22666667-109.22666667V202.52444445c0-60.07466667 49.152-109.22666667 109.22666667-109.22666667h618.9511111c60.07466667 0 109.22666667 49.152 109.22666667 109.22666667v436.90666666zM566.61333333 311.75111111c-20.02488889 0-36.40888889 16.384-36.40888888 36.40888889v131.072L273.52177778 222.54933333c-14.56355555-14.56355555-36.40888889-14.56355555-50.97244445 0-14.56355555 14.56355555-14.56355555 36.40888889 0 50.97244445L479.232 530.20444445H348.16c-20.02488889 0-36.40888889 16.384-36.40888889 36.40888888s16.384 36.40888889 36.40888889 36.40888889h218.45333333c10.92266667 0 20.02488889-3.64088889 25.48622222-10.92266667 7.28177778-7.28177778 10.92266667-16.384 10.92266667-25.48622222V348.16c0-20.02488889-16.384-36.40888889-36.40888889-36.40888889z";
+}
+
+.close-btn Region {
+    -fx-shape: "M846.841 799.024L562.002 514.185l284.839-284.96c13.714-13.714 13.714-36.045 0-49.759s-36.045-13.714-49.759 0L512.243 464.305l-284.96-284.839c-13.714-13.714-36.045-13.714-49.759 0s-13.714 36.045 0 49.759l284.96 284.96-284.96 284.839c-13.714 13.714-13.714 36.045 0 49.759s36.045 13.714 49.759 0l284.96-284.96 284.96 284.96c13.714 13.714 36.045 13.714 49.759 0 13.593-13.714 13.593-36.045-0.122-49.759z";
+}
+
+.close-btn:hover Region {
+    -fx-background-color: red;
+}
+
+
+/***************按钮样式*********************/
+#level4{
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/leve4.png");
+    -rx-translation-dir: LEFT_TO_RIGHT;
+}
+#level4 .hover-label {
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+}
+
+
+#level6{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/leve6.png");
+    -rx-translation-dir: TOP_TO_BOTTOM;
+
+}
+#level6 .hover-label{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+}
+
+
+#ielts{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/ielts.png");
+    -rx-translation-dir: RIGHT_TO_LEFT;
+}
+#ielts .hover-label{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+}
+
+
+#toefl{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/toefl.png");
+    -rx-translation-dir: BOTTOM_TO_TOP;
+}
+#toefl .hover-label{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+}
+
+
+#research{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/research.png");
+    -rx-translation-dir: BOTTOM_TO_TOP;
+}
+#research .hover-label{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+}
+
+#special4{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/special4.png");
+
+    -rx-translation-dir: RIGHT_TO_LEFT;
+}
+#special4 .hover-label{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+}
+
+#special8{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/special8.png");
+    -rx-translation-dir: TOP_TO_BOTTOM;
+}
+#special8 .hover-label{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+}
+
+#escalate{
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/escalate.png");
+    -rx-translation-dir: LEFT_TO_RIGHT;
+
+}
+#escalate .hover-label{
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+}
+
+#middle{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/middle.png");
+    -rx-translation-dir: LEFT_TO_RIGHT;
+}
+#middle .hover-label{
+    -fx-background-color: #8255ff;
+    -fx-background-radius: 4;
+}
+
+
+#high{
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/high.png");
+    -rx-translation-dir: BOTTOM_TO_TOP;
+}
+#high .hover-label{
+    -fx-background-color: #508aff;
+    -fx-background-radius: 4;
+}
+
+#liberty{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/liberty.png");
+    -rx-translation-dir: RIGHT_TO_LEFT;
+}
+#liberty .hover-label{
+    -fx-background-color: #ffc355;
+    -fx-background-radius: 4;
+}
+
+#levelfour{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+    -fx-font-size: 15;
+    -fx-graphic: url("../img/level2022.png");
+    -rx-translation-dir: TOP_TO_BOTTOM;
+
+}
+#levelfour .hover-label{
+    -fx-background-color: #ff7ead;
+    -fx-background-radius: 4;
+}
+

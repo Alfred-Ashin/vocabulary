@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="780.0" styleClass="root-pane" stylesheets="@../css/vocabularySteady.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.vocabulary.controller.VocabularySteadyController">
+   <center>
+      <AnchorPane fx:id="drawerPane" layoutX="1.0" prefHeight="600.0" prefWidth="800.0" styleClass="content-pane">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER_RIGHT" layoutX="615.0" layoutY="14.0" prefHeight="29.0" prefWidth="131.0" spacing="10.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <ToggleButton mnemonicParsing="false" styleClass="full-btn">
+                     <graphic>
+                        <Region onMousePressed="#onFullAction" prefHeight="200.0" prefWidth="200.0" />
+                     </graphic>
+                  </ToggleButton>
+                  <StackPane layoutX="162.0" layoutY="22.0" maxHeight="19.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Region onMousePressed="#onMiniAction" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="svg-btn" />
+                        <String fx:value="mini-btn" />
+                     </styleClass>
+                  </StackPane>
+                  <StackPane layoutX="194.0" layoutY="22.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Region onMousePressed="#onCloseAction" prefHeight="200.0" prefWidth="200.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Region>
+                     </children>
+                     <styleClass>
+                        <String fx:value="svg-btn" />
+                        <String fx:value="close-btn" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox fx:id="imgBtnBox" layoutX="11.0" layoutY="79.0" prefHeight="39.0" prefWidth="742.0" spacing="20.0" AnchorPane.bottomAnchor="569.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="79.0">
+               <children>
+                  <ImageView fx:id="iv1" onMousePressed="#backAction">
+                     <image>
+                        <Image url="@../img/back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="iv2" onMousePressed="#tipAction">
+                     <image>
+                        <Image url="@../img/tips.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="iv3" onMousePressed="#checkAction">
+                     <image>
+                        <Image url="@../img/check.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="iv4" onMousePressed="#nextAction" rotate="-90.0">
+                     <image>
+                        <Image url="@../img/next.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="iv5" onMousePressed="#changeAction">
+                     <image>
+                        <Image url="@../img/toggle.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="169.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <StackPane fx:id="stackPane" layoutX="65.0" layoutY="156.0" prefHeight="481.0" prefWidth="630.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="156.0">
+               <children>
+                  <GridPane fx:id="contentPane" alignment="CENTER" prefHeight="412.0" prefWidth="630.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="178.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints fillHeight="false" maxHeight="183.0" minHeight="10.0" prefHeight="75.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="261.0" minHeight="10.0" prefHeight="228.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox fx:id="contentBox" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <children>
+                              <ToggleButton fx:id="playBtn" mnemonicParsing="false" onAction="#onWordPlayAction" styleClass="play-btn" visible="false">
+                                 <graphic>
+                                    <Region onMousePressed="#onFullAction" prefHeight="200.0" prefWidth="200.0" />
+                                 </graphic>
+                              </ToggleButton>
+                           </children>
+                        </HBox>
+                        <BorderPane prefHeight="147.0" prefWidth="630.0" GridPane.rowIndex="2">
+                           <top>
+                              <ImageView fx:id="iv" fitHeight="110.0" fitWidth="172.0" pickOnBounds="true" BorderPane.alignment="CENTER" />
+                           </top>
+                           <center>
+                              <Label fx:id="phraseLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="629.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <effect>
+      <DropShadow />
+   </effect>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>
